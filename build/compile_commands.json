@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/client.dir/main.cpp.o -c /Users/thomas.mulligan/GitProjects/CrappyNotesClient/main.cpp",
+  "file": "/Users/thomas.mulligan/GitProjects/CrappyNotesClient/main.cpp",
+  "output": "CMakeFiles/client.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build",
+  "command": "/usr/bin/clang++ -I/Users/thomas.mulligan/GitProjects/CrappyNotesClient/src -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o src/CMakeFiles/src.dir/version.cpp.o -c /Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/version.cpp",
+  "file": "/Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/version.cpp",
+  "output": "src/CMakeFiles/src.dir/version.cpp.o"
+}
+]

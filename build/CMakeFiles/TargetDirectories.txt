@@ -1,0 +1,6 @@
+/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/CMakeFiles/client.dir
+/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/CMakeFiles/edit_cache.dir
+/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/CMakeFiles/rebuild_cache.dir
+/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/src/CMakeFiles/src.dir
+/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/src/CMakeFiles/edit_cache.dir
+/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/src/CMakeFiles/rebuild_cache.dir

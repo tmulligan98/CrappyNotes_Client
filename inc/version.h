@@ -12,6 +12,5 @@ using namespace std;
 class ClientVersion {
     public:
         static string versionNum;
-        static const string get() {return versionNum;};
     
-}
+};
