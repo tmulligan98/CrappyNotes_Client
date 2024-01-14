@@ -41,35 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target client
+# Object build statements for EXECUTABLE target CrappyNotesClient
 
 
 #############################################
-# Order-only phony target for client
+# Order-only phony target for CrappyNotesClient
 
-build cmake_object_order_depends_target_client: phony || CMakeFiles/client.dir
+build cmake_object_order_depends_target_CrappyNotesClient: phony || CMakeFiles/CrappyNotesClient.dir
 
-build CMakeFiles/client.dir/main.cpp.o: CXX_COMPILER__client_unscanned_Debug /Users/thomas.mulligan/GitProjects/CrappyNotesClient/main.cpp || cmake_object_order_depends_target_client
-  DEP_FILE = CMakeFiles/client.dir/main.cpp.o.d
+build CMakeFiles/CrappyNotesClient.dir/src/main.cpp.o: CXX_COMPILER__CrappyNotesClient_unscanned_Debug /Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/main.cpp || cmake_object_order_depends_target_CrappyNotesClient
+  DEP_FILE = CMakeFiles/CrappyNotesClient.dir/src/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
-  OBJECT_DIR = CMakeFiles/client.dir
-  OBJECT_FILE_DIR = CMakeFiles/client.dir
+  INCLUDES = -I/Users/thomas.mulligan/GitProjects/CrappyNotesClient/inc
+  OBJECT_DIR = CMakeFiles/CrappyNotesClient.dir
+  OBJECT_FILE_DIR = CMakeFiles/CrappyNotesClient.dir/src
+
+build CMakeFiles/CrappyNotesClient.dir/src/version.cpp.o: CXX_COMPILER__CrappyNotesClient_unscanned_Debug /Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/version.cpp || cmake_object_order_depends_target_CrappyNotesClient
+  DEP_FILE = CMakeFiles/CrappyNotesClient.dir/src/version.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
+  INCLUDES = -I/Users/thomas.mulligan/GitProjects/CrappyNotesClient/inc
+  OBJECT_DIR = CMakeFiles/CrappyNotesClient.dir
+  OBJECT_FILE_DIR = CMakeFiles/CrappyNotesClient.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target client
+# Link build statements for EXECUTABLE target CrappyNotesClient
 
 
 #############################################
-# Link the executable client
+# Link the executable CrappyNotesClient
 
-build client: CXX_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/main.cpp.o
+build CrappyNotesClient: CXX_EXECUTABLE_LINKER__CrappyNotesClient_Debug CMakeFiles/CrappyNotesClient.dir/src/main.cpp.o CMakeFiles/CrappyNotesClient.dir/src/version.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
-  OBJECT_DIR = CMakeFiles/client.dir
+  OBJECT_DIR = CMakeFiles/CrappyNotesClient.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = client
-  TARGET_PDB = client.dbg
+  TARGET_FILE = CrappyNotesClient
+  TARGET_PDB = CrappyNotesClient.dbg
 
 
 #############################################
@@ -96,73 +104,7 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /Users/thomas.mulligan/GitProjects/CrappyNotesClient/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target src
-
-
-#############################################
-# Order-only phony target for src
-
-build cmake_object_order_depends_target_src: phony || src/CMakeFiles/src.dir
-
-build src/CMakeFiles/src.dir/version.cpp.o: CXX_COMPILER__src_unscanned_Debug /Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/version.cpp || cmake_object_order_depends_target_src
-  DEP_FILE = src/CMakeFiles/src.dir/version.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
-  INCLUDES = -I/Users/thomas.mulligan/GitProjects/CrappyNotesClient/src
-  OBJECT_DIR = src/CMakeFiles/src.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/src.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target src
-
-
-#############################################
-# Link the static library src/libsrc.a
-
-build src/libsrc.a: CXX_STATIC_LIBRARY_LINKER__src_Debug src/CMakeFiles/src.dir/version.cpp.o
-  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = src/CMakeFiles/src.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = src/libsrc.a
-  TARGET_PDB = src.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/src && /opt/homebrew/Cellar/cmake/3.27.7/bin/ccmake -S/Users/thomas.mulligan/GitProjects/CrappyNotesClient -B/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build
-  DESC = Running CMake cache editor...
-  pool = console
-  restat = 1
-
-build src/edit_cache: phony src/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/src && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake --regenerate-during-build -S/Users/thomas.mulligan/GitProjects/CrappyNotesClient -B/Users/thomas.mulligan/GitProjects/CrappyNotesClient/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
 # Target aliases.
-
-build libsrc.a: phony src/libsrc.a
-
-build src: phony src/libsrc.a
 
 # =============================================================================
 # Folder targets.
@@ -172,14 +114,7 @@ build src: phony src/libsrc.a
 #############################################
 # Folder: /Users/thomas.mulligan/GitProjects/CrappyNotesClient/build
 
-build all: phony client src/all
-
-# =============================================================================
-
-#############################################
-# Folder: /Users/thomas.mulligan/GitProjects/CrappyNotesClient/build/src
-
-build src/all: phony src/libsrc.a
+build all: phony CrappyNotesClient
 
 # =============================================================================
 # Built-in targets
@@ -188,14 +123,14 @@ build src/all: phony src/libsrc.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/thomas.mulligan/GitProjects/CrappyNotesClient/CMakeLists.txt /Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/thomas.mulligan/GitProjects/CrappyNotesClient/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/thomas.mulligan/GitProjects/CrappyNotesClient/CMakeLists.txt /Users/thomas.mulligan/GitProjects/CrappyNotesClient/src/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake: phony
+build /Users/thomas.mulligan/GitProjects/CrappyNotesClient/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.7/CMakeCCompiler.cmake CMakeFiles/3.27.7/CMakeCXXCompiler.cmake CMakeFiles/3.27.7/CMakeSystem.cmake: phony
 
 
 #############################################
