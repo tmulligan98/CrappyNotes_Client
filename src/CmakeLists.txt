@@ -1,0 +1,7 @@
+add_library(src version.cpp)
+
+# Include the header files directory
+target_include_directories(src PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Link the library to the executable
+# target_link_libraries(client PUBLIC src)
