@@ -7,10 +7,9 @@
 #endif // CLIENT_UTILS_VERSION
 
 #include <string>
-using namespace std;
 
 class ClientVersion {
     public:
-        static string versionNum;
+        static std::string versionNum;
     
 };
