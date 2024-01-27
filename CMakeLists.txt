@@ -4,11 +4,13 @@ project(CrappyNotesClient)
 # Add Source files
 set(SOURCES
     src/main.cpp
-    src/version.cpp)
+    src/version.cpp
+    src/request.cpp)
 
 # Add the header files
 set(HEADERS
     inc/version.h
+    inc/request.h
 )
 
 # Include directories

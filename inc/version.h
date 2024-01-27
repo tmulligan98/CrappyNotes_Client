@@ -4,8 +4,6 @@
 #define CLIENT_VERSION "1.0.0"
 #define BUILD_NUMBER 1
 
-#endif // CLIENT_UTILS_VERSION
-
 #include <string>
 
 class ClientVersion {
@@ -13,3 +11,6 @@ class ClientVersion {
         static std::string versionNum;
     
 };
+
+
+#endif // CLIENT_UTILS_VERSION
